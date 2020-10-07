@@ -9,3 +9,4 @@ Collection of my Development Tools, Configuration, and Setup
 ## Extras
 - [Conda](https://www.anaconda.com/products/individual): for python package management
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html): for convenient AWS functions
+- [SSH Agent Forward](https://docs.github.com/en/free-pro-team@latest/developers/overview/using-ssh-agent-forwarding): forward local SSH agent keys to remote instances, avoid copying keys to remote hosts
