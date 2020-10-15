@@ -11,3 +11,25 @@ Collection of my Development Tools, Configuration, and Setup
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html): for convenient AWS functions
 - [SSH Agent Forward](https://docs.github.com/en/free-pro-team@latest/developers/overview/using-ssh-agent-forwarding): forward local SSH agent keys to remote instances, avoid copying keys to remote hosts
 - [Linux timezone](https://linuxize.com/post/how-to-set-or-change-timezone-in-linux/): `sudo timedatectl set-timezone America/New_York`
+
+## Shell commands
+
+### Color log files
+```bash
+# Simple function for coloring tail'd logs
+ctail() {
+  tail -F "$1" | awk '
+    /INFO/ {print "\033[32m" $0 "\033[39m"}
+    /ERROR/ {print "\033[31m" $0 "\033[39m"}
+    /CRITICAL/ {print "\033[31;1m" $0 "\033[39m"}
+  '
+}
+```
+
+### Grep processes by command
+```bash
+# Function to grep processes by command
+top_grep_cmd() {
+  top -p $(pgrep -d',' $1)
+}
+```
