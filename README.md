@@ -11,6 +11,5 @@ Collection of my Development Tools, Configuration, and Setup
 - [Linux timezone](https://linuxize.com/post/how-to-set-or-change-timezone-in-linux/): `sudo timedatectl set-timezone America/New_York`
 
 ## Extras
-- Add some nifty shell commands to `.zshrc`: `cat funcs.sh >> $HOME/.zshrc`
-  - `ctail`: color `tail`
-  - `top_grep`: `top` with `grep`
+- Add some nifty commands to `.zshrc`: `cat funcs.sh >> $HOME/.zshrc`
+  - `cawk`: color log files like `tail -F logfile | cawk` or `less logfile | cawk`
