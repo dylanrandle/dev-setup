@@ -13,3 +13,6 @@ Collection of my Development Tools, Configuration, and Setup
 ## Extras
 - Add some nifty commands to `.zshrc`: `cat funcs.sh >> $HOME/.zshrc`
   - `cawk`: color log files like `tail -F logfile | cawk` or `less logfile | cawk`
+- Conda environments in Jupyter notebook kernels:
+  - Add: `python -m ipykernel install --user --name=testEnv`
+  - Remove: `jupyter kernelspec remove testEnv`
