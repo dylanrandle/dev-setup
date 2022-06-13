@@ -8,6 +8,6 @@ set -e
 brew install zsh git node nvm yarn tmux vim htop
 
 # install Casks
-brew install --cask miniconda pycharm visual-studio-code istat-menus
+brew install --cask iterm2 miniconda pycharm visual-studio-code istat-menus
 
 echo "Ran bootstrap actions successfully."
